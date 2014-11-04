@@ -22,6 +22,7 @@
 		B384CC5C1A0894FB007008F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B384CC3B1A0894FB007008F5 /* UIKit.framework */; };
 		B384CC641A0894FB007008F5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B384CC621A0894FB007008F5 /* InfoPlist.strings */; };
 		B384CC661A0894FB007008F5 /* FrewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B384CC651A0894FB007008F5 /* FrewTests.m */; };
+		B384CC711A08A0BE007008F5 /* ContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = B384CC701A08A0BE007008F5 /* ContentController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		B384CC611A0894FB007008F5 /* FrewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FrewTests-Info.plist"; sourceTree = "<group>"; };
 		B384CC631A0894FB007008F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B384CC651A0894FB007008F5 /* FrewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrewTests.m; sourceTree = "<group>"; };
+		B384CC6F1A08A0BE007008F5 /* ContentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentController.h; sourceTree = "<group>"; };
+		B384CC701A08A0BE007008F5 /* ContentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,9 +87,9 @@
 		B384CC2B1A0894FB007008F5 = {
 			isa = PBXGroup;
 			children = (
+				B384CC361A0894FB007008F5 /* Frameworks */,
 				B384CC3D1A0894FB007008F5 /* Frew */,
 				B384CC5F1A0894FB007008F5 /* FrewTests */,
-				B384CC361A0894FB007008F5 /* Frameworks */,
 				B384CC351A0894FB007008F5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -116,12 +119,14 @@
 			children = (
 				B384CC461A0894FB007008F5 /* AppDelegate.h */,
 				B384CC471A0894FB007008F5 /* AppDelegate.m */,
-				B384CC491A0894FB007008F5 /* Main_iPhone.storyboard */,
+				B384CC6F1A08A0BE007008F5 /* ContentController.h */,
+				B384CC701A08A0BE007008F5 /* ContentController.m */,
+				B384CC521A0894FB007008F5 /* Images.xcassets */,
 				B384CC4C1A0894FB007008F5 /* Main_iPad.storyboard */,
+				B384CC491A0894FB007008F5 /* Main_iPhone.storyboard */,
+				B384CC3E1A0894FB007008F5 /* Supporting Files */,
 				B384CC4F1A0894FB007008F5 /* ViewController.h */,
 				B384CC501A0894FB007008F5 /* ViewController.m */,
-				B384CC521A0894FB007008F5 /* Images.xcassets */,
-				B384CC3E1A0894FB007008F5 /* Supporting Files */,
 			);
 			path = Frew;
 			sourceTree = "<group>";
@@ -254,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B384CC511A0894FB007008F5 /* ViewController.m in Sources */,
+				B384CC711A08A0BE007008F5 /* ContentController.m in Sources */,
 				B384CC481A0894FB007008F5 /* AppDelegate.m in Sources */,
 				B384CC441A0894FB007008F5 /* main.m in Sources */,
 			);
@@ -470,6 +476,7 @@
 				B384CC6B1A0894FB007008F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B384CC6C1A0894FB007008F5 /* Build configuration list for PBXNativeTarget "FrewTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +485,7 @@
 				B384CC6E1A0894FB007008F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
