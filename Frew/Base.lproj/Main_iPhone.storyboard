@@ -23,17 +23,16 @@
                         <viewControllerLayoutGuide type="bottom" id="BCY-DR-4ES"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="yPC-EU-rce">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tree.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="K9p-Ja-mb3">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="640"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tree.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="gEd-mh-hFS">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="320"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e9a-ZN-z8h" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -49,17 +48,16 @@
                         <viewControllerLayoutGuide type="bottom" id="LvS-I6-hLy"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Qo0-Ma-jZf">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="New York.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="VU2-Ab-Ke5">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="640"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="New York.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="KQg-vp-AtN">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="320"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CBt-nE-QxK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -75,17 +73,16 @@
                         <viewControllerLayoutGuide type="bottom" id="D7Q-eC-bTb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="GOm-iA-gOs">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Adelaide.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Mmq-An-Wx4">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="640"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Adelaide.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hOH-fZ-DHI">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="320"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m5N-B8-ixe" userLabel="First Responder" sceneMemberID="firstResponder"/>
