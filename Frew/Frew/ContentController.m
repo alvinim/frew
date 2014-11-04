@@ -11,8 +11,9 @@
 @implementation ContentController
 
 - (void)viewWillAppear:(BOOL)animated {
-  NSLog(@"%@", self.class);
   self.hashLabel.text = [NSString stringWithFormat:@"%d", self.hash];
+  self.pageLabel.text = [NSString stringWithFormat:@"%d", self.page];
+
   [super viewWillAppear:animated];
 }
 
