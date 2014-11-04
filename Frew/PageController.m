@@ -20,6 +20,10 @@
 - (void)viewDidLoad {
 
   self.dataSource = self;
+  self.view.clipsToBounds = NO;
+
+  UIView *view = self.view.subviews[0];
+  view.clipsToBounds = NO;
 
   UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone"
                                                        bundle:nil];
@@ -66,15 +70,6 @@
     return nil;
 
   return pages[content.page + 1];
-}
-
-- (NSInteger)presentationCountForPageViewController:(UIPageViewController *)view { return pages.count; }
-
-- (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)view {
-
-  ContentController *content = view.viewControllers[0];
-
-  return content.page;
 }
 
 @end
