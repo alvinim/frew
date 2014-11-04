@@ -19,26 +19,30 @@
 
 - (void)viewDidLoad {
 
-  self.dataSource = self;
-  self.view.clipsToBounds = NO;
-
   UIView *view = self.view.subviews[0];
-  view.clipsToBounds = NO;
-
   UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone"
                                                        bundle:nil];
 
+  self.dataSource = self;
+  self.delegate = self;
+  self.view.clipsToBounds = NO;
+  view.clipsToBounds = NO;
   pages = [NSMutableArray array];
+
   [@[
     @"adelaide",
     @"tree",
     @"new york"
   ] enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+
     ContentController *content = [storyboard instantiateViewControllerWithIdentifier:obj];
 
     content.page = idx;
     [pages addObject:content];
   }];
+
+  self.pageControl.currentPage = 0;
+  self.pageControl.numberOfPages = pages.count;
 
   [self setViewControllers:@[ pages[0] ]
                  direction:UIPageViewControllerNavigationDirectionForward
@@ -70,6 +74,19 @@
     return nil;
 
   return pages[content.page + 1];
+}
+
+#pragma mark - Page view controller delegate
+
+- (void)pageViewController:(UIPageViewController *)page
+        didFinishAnimating:(BOOL)finished
+   previousViewControllers:(NSArray *)controllers
+       transitionCompleted:(BOOL)completed {
+
+  ContentController *content = page.viewControllers[0];
+
+  self.pageControl.currentPage = content.page;
+  [self.pageControl updateCurrentPageDisplay];
 }
 
 @end

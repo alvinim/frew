@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3128FC81A092A1A0013AA6A /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3128FC71A092A1A0013AA6A /* HomeController.m */; };
 		B36A34131A08F4770026B692 /* Adelaide.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B36A34101A08F4770026B692 /* Adelaide.jpg */; };
 		B36A34141A08F4770026B692 /* New York.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B36A34111A08F4770026B692 /* New York.jpg */; };
 		B36A34151A08F4770026B692 /* Tree.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B36A34121A08F4770026B692 /* Tree.jpg */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B3128FC61A092A1A0013AA6A /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
+		B3128FC71A092A1A0013AA6A /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
 		B36A34101A08F4770026B692 /* Adelaide.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Adelaide.jpg; sourceTree = "<group>"; };
 		B36A34111A08F4770026B692 /* New York.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "New York.jpg"; sourceTree = "<group>"; };
 		B36A34121A08F4770026B692 /* Tree.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tree.jpg; sourceTree = "<group>"; };
@@ -137,6 +140,8 @@
 				B384CC471A0894FB007008F5 /* AppDelegate.m */,
 				B384CC6F1A08A0BE007008F5 /* ContentController.h */,
 				B384CC701A08A0BE007008F5 /* ContentController.m */,
+				B3128FC61A092A1A0013AA6A /* HomeController.h */,
+				B3128FC71A092A1A0013AA6A /* HomeController.m */,
 				B36A340F1A08F4770026B692 /* Images */,
 				B384CC521A0894FB007008F5 /* Images.xcassets */,
 				B384CC4C1A0894FB007008F5 /* Main_iPad.storyboard */,
@@ -281,6 +286,7 @@
 				B384CC511A0894FB007008F5 /* PageController.m in Sources */,
 				B384CC711A08A0BE007008F5 /* ContentController.m in Sources */,
 				B384CC481A0894FB007008F5 /* AppDelegate.m in Sources */,
+				B3128FC81A092A1A0013AA6A /* HomeController.m in Sources */,
 				B384CC441A0894FB007008F5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
