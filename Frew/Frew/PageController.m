@@ -6,33 +6,37 @@
 //  Copyright (c) 2014 Enginer Partner. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "PageController.h"
 #import "ContentController.h"
 
-@interface ViewController () { NSUInteger total; }
+@interface PageController () { NSMutableArray *pages; }
 
 @end
 
-@implementation ViewController
-
-- (ContentController *)createPage {
-  UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone"
-                                                       bundle:nil];
-
-  return [storyboard instantiateViewControllerWithIdentifier:@"content"];
-}
+@implementation PageController
 
 #pragma mark - View controller methods
 
 - (void)viewDidLoad {
 
-  total = 5;
   self.dataSource = self;
 
-  ContentController *content = self.createPage;
-  content.page = 0;
+  UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone"
+                                                       bundle:nil];
 
-  [self setViewControllers:@[ content ]
+  pages = [NSMutableArray array];
+  [@[
+    @"adelaide",
+    @"tree",
+    @"new york"
+  ] enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+    ContentController *content = [storyboard instantiateViewControllerWithIdentifier:obj];
+
+    content.page = idx;
+    [pages addObject:content];
+  }];
+
+  [self setViewControllers:@[ pages[0] ]
                  direction:UIPageViewControllerNavigationDirectionForward
                   animated:NO
                 completion:NULL];
@@ -50,10 +54,7 @@
   if (content.page <= 0)
     return nil;
 
-  ContentController *preious = self.createPage;
-  preious.page = content.page - 1;
-
-  return preious;
+  return pages[content.page - 1];
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageView
@@ -61,16 +62,13 @@
 
   ContentController *content = (ContentController *)view;
 
-  if (total - 1 <= content.page)
+  if (pages.count - 1 <= content.page)
     return nil;
 
-  ContentController *next = self.createPage;
-  next.page = content.page + 1;
-
-  return next;
+  return pages[content.page + 1];
 }
 
-- (NSInteger)presentationCountForPageViewController:(UIPageViewController *)view { return total; }
+- (NSInteger)presentationCountForPageViewController:(UIPageViewController *)view { return pages.count; }
 
 - (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)view {
 

@@ -11,7 +11,5 @@
 @interface ContentController : UIViewController
 
 @property (nonatomic, assign) NSUInteger page;
-@property (strong, nonatomic) IBOutlet UILabel *hashLabel;
-@property (strong, nonatomic) IBOutlet UILabel *pageLabel;
 
 @end

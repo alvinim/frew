@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B36A34131A08F4770026B692 /* Adelaide.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B36A34101A08F4770026B692 /* Adelaide.jpg */; };
+		B36A34141A08F4770026B692 /* New York.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B36A34111A08F4770026B692 /* New York.jpg */; };
+		B36A34151A08F4770026B692 /* Tree.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B36A34121A08F4770026B692 /* Tree.jpg */; };
 		B384CC381A0894FB007008F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B384CC371A0894FB007008F5 /* Foundation.framework */; };
 		B384CC3A1A0894FB007008F5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B384CC391A0894FB007008F5 /* CoreGraphics.framework */; };
 		B384CC3C1A0894FB007008F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B384CC3B1A0894FB007008F5 /* UIKit.framework */; };
@@ -15,7 +18,7 @@
 		B384CC481A0894FB007008F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B384CC471A0894FB007008F5 /* AppDelegate.m */; };
 		B384CC4B1A0894FB007008F5 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B384CC491A0894FB007008F5 /* Main_iPhone.storyboard */; };
 		B384CC4E1A0894FB007008F5 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B384CC4C1A0894FB007008F5 /* Main_iPad.storyboard */; };
-		B384CC511A0894FB007008F5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B384CC501A0894FB007008F5 /* ViewController.m */; };
+		B384CC511A0894FB007008F5 /* PageController.m in Sources */ = {isa = PBXBuildFile; fileRef = B384CC501A0894FB007008F5 /* PageController.m */; };
 		B384CC531A0894FB007008F5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B384CC521A0894FB007008F5 /* Images.xcassets */; };
 		B384CC5A1A0894FB007008F5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B384CC591A0894FB007008F5 /* XCTest.framework */; };
 		B384CC5B1A0894FB007008F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B384CC371A0894FB007008F5 /* Foundation.framework */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B36A34101A08F4770026B692 /* Adelaide.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Adelaide.jpg; sourceTree = "<group>"; };
+		B36A34111A08F4770026B692 /* New York.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "New York.jpg"; sourceTree = "<group>"; };
+		B36A34121A08F4770026B692 /* Tree.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tree.jpg; sourceTree = "<group>"; };
 		B384CC341A0894FB007008F5 /* Frew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Frew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B384CC371A0894FB007008F5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B384CC391A0894FB007008F5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,8 +54,8 @@
 		B384CC471A0894FB007008F5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B384CC4A1A0894FB007008F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		B384CC4D1A0894FB007008F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		B384CC4F1A0894FB007008F5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B384CC501A0894FB007008F5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B384CC4F1A0894FB007008F5 /* PageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageController.h; sourceTree = "<group>"; };
+		B384CC501A0894FB007008F5 /* PageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageController.m; sourceTree = "<group>"; };
 		B384CC521A0894FB007008F5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B384CC581A0894FB007008F5 /* FrewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B384CC591A0894FB007008F5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -84,6 +90,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B36A340F1A08F4770026B692 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B36A34101A08F4770026B692 /* Adelaide.jpg */,
+				B36A34111A08F4770026B692 /* New York.jpg */,
+				B36A34121A08F4770026B692 /* Tree.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		B384CC2B1A0894FB007008F5 = {
 			isa = PBXGroup;
 			children = (
@@ -121,12 +137,13 @@
 				B384CC471A0894FB007008F5 /* AppDelegate.m */,
 				B384CC6F1A08A0BE007008F5 /* ContentController.h */,
 				B384CC701A08A0BE007008F5 /* ContentController.m */,
+				B36A340F1A08F4770026B692 /* Images */,
 				B384CC521A0894FB007008F5 /* Images.xcassets */,
 				B384CC4C1A0894FB007008F5 /* Main_iPad.storyboard */,
 				B384CC491A0894FB007008F5 /* Main_iPhone.storyboard */,
+				B384CC4F1A0894FB007008F5 /* PageController.h */,
+				B384CC501A0894FB007008F5 /* PageController.m */,
 				B384CC3E1A0894FB007008F5 /* Supporting Files */,
-				B384CC4F1A0894FB007008F5 /* ViewController.h */,
-				B384CC501A0894FB007008F5 /* ViewController.m */,
 			);
 			path = Frew;
 			sourceTree = "<group>";
@@ -236,9 +253,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B36A34151A08F4770026B692 /* Tree.jpg in Resources */,
+				B36A34131A08F4770026B692 /* Adelaide.jpg in Resources */,
 				B384CC4E1A0894FB007008F5 /* Main_iPad.storyboard in Resources */,
 				B384CC531A0894FB007008F5 /* Images.xcassets in Resources */,
 				B384CC4B1A0894FB007008F5 /* Main_iPhone.storyboard in Resources */,
+				B36A34141A08F4770026B692 /* New York.jpg in Resources */,
 				B384CC421A0894FB007008F5 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,7 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B384CC511A0894FB007008F5 /* ViewController.m in Sources */,
+				B384CC511A0894FB007008F5 /* PageController.m in Sources */,
 				B384CC711A08A0BE007008F5 /* ContentController.m in Sources */,
 				B384CC481A0894FB007008F5 /* AppDelegate.m in Sources */,
 				B384CC441A0894FB007008F5 /* main.m in Sources */,
