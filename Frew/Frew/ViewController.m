@@ -8,22 +8,21 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
-
-@end
-
 @implementation ViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+- (void)viewDidLoad {
+  self.dataSource = self;
+  [super viewDidLoad];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (UIViewController *)pageViewController:(UIPageViewController *)page
+      viewControllerBeforeViewController:(UIViewController *)view {
+  return nil;
+}
+
+- (UIViewController *)pageViewController:(UIPageViewController *)page
+       viewControllerAfterViewController:(UIViewController *)view {
+  return nil;
 }
 
 @end
